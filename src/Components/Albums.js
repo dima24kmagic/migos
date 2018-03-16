@@ -57,17 +57,23 @@ const Albums = (props) => {
       </div>
 
 
+      <div class="my-line my-sm-2 mt-3">
+    		<div class="line"></div>
+    		<span class="squad"></span>
+    		<div class="line"></div>
+    	</div>
+
+    	<h1 class="display-4 text-center mb-sm-5 mb-4">Reviews</h1>
 
 
 
 
-
-
+<div class="row d-sm-flex flex-sm-row justify-content-start reviews mb-sm-3">
      {props.reviews.map((review, index) => {
        return(
          <div className="col-12 col-sm-6 col-lg-4 mb-2" key={index}>
    	      <div className="row flex-row flex-sm-column flex-xl-row">
-   			    <img src={review.img} className="big-sean mr-1 review img-thumbnail align-self-center align-self-lg-left"/>
+   			    <img src={review.img} className="big-sean mr-1 review align-self-center align-self-lg-left obj-fit"/>
      				<blockquote className="blockquote text-left mb-1">
      					<h2 className="m-0 align-self-center text-left text-sm-center text-xl-left">{review.name}</h2>
      					<footer className="blockquote-footer text-capitalize text-center text-xl-left">
@@ -78,7 +84,7 @@ const Albums = (props) => {
    	   </div>
        )
      })}
-
+</div>
 
 
 

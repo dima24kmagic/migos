@@ -55,6 +55,8 @@ img{
 	width: 120px;
 	height: 120px;
 	background-size: cover;
+  border-radius: 4px;
+  border: 1px solid rgb(233, 229, 227);
 }
 .reviews .container{
 	background: #fff9f6;
